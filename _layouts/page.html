@@ -6,7 +6,7 @@ layout: default
   <div
     class="hero spacer d-flex justify-content-center align-items-center"
     {% if page.hero_image_url %}
-      style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ page.hero_image_url }});"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ page.hero_image_url | relative_url }});"
     {% endif %}
   >
     <h1 class="hero--title">
