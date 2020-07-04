@@ -1,37 +1,64 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p class="feed-subscribe">
-          <a href="{{ 'feed.xml' | relative_url }}">
-            <svg class="svg-icon orange">
-              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
-          </a>
-        </p>
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
+  <div class="container">
+    <div class="row flex-sm-column-reverse flex-md-row">
+      <div class="col-sm-12 col-md-4">
+        <img src="{{ '/assets/images/logos/scc-logo-cutout-white.svg' | relative_url }}" class="site-footer--logo" />
       </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
+
+      <div class="col-sm-12 col-md-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 footer-links"></div>
+
+            <div class="col-sm-12 col-md-4 footer-links">
+              <p class="footer-link--title">The Club</p>
+              <ul>
+                <li><a href="" class="footer-link">The Committee</a></li>
+                <li><a href="" class="footer-link">Our Constitution</a></li>
+              </ul>
+              <p class="footer-link--title">Join the ride</p>
+              <ul>
+                <li><a href="" class="footer-link">Meet us</a></li>
+                <li><a href="" class="footer-link">Membership</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-4 footer-links">
+              <p class="footer-link--title">Riding and Racing</p>
+              <ul>
+                <li><a href="" class="footer-link">Social</a></li>
+                <li><a href="" class="footer-link">Racing</a></li>
+                <li><a href="" class="footer-link">Etiquette</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="social-links">
-      {%- include social.html -%}
-    </div>
-
   </div>
 
+  <div class="container">
+    <div class="d-flex flex-xs-column-reverse flex-sm-column-reverse flex-md-row justify-content-between align-items-center copyright-statement">
+      <small>
+        &copy; Surbiton Cycle Club. All rights reserved.
+      </small>
+
+      <div class="d-inline-flex align-items-center footer-socials">
+        <a href="https://www.strava.com/clubs/surbitoncc" title="(Opens in new window)" target="_blank">
+          <span class="icon-strava">Strava</span>
+        </a>
+
+        <a href="https://www.instagram.com/surbiton.cc" title="(Opens in new window)" target="_blank">
+          <span class="icon-instagram">Instagram</span>
+        </a>
+
+        <a href="https://www.britishcycling.org.uk/club/profile/8974/surbiton-cycle-club" target="_blank"
+          title="(Opens in new window)">
+          <img src="{{ '/assets/images/logos/british-cycling.png' | relative_url }}" style="max-height: 40px;" />
+        </a>
+      </div>
+    </div>
+  </div>
 </footer>

@@ -1,6 +1,16 @@
 @charset "utf-8";
 
-$brand-color:           #828282 !default;
+$brand-indigo: #1E3E60;
+$brand-red: #F02D3A;
+$brand-skye: #78C0E0;
+$brand-white: #FEFEFE;
+$brand-grey: #404040;
+$brand-highlight: #ff0dbf;
+
+$font-display: 'RoadRage';
+$font-headings: 'TitlingGothicFB Comp Medium';
+
+$brand-color:           $brand-indigo;
 $brand-color-light:     lighten($brand-color, 40%) !default;
 $brand-color-dark:      darken($brand-color, 25%) !default;
 

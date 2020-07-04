@@ -1,0 +1,206 @@
+main .spacer {
+  padding-top: 132px;
+  transition: linear padding-top 0.2s;
+
+  .stuck + & {
+    padding-top: 78px;
+  }
+}
+
+.site-header {
+  background: rgba($brand-indigo, 0.6);
+  padding-bottom: 15px;
+  padding-top: 15px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.site-logo {
+  display: block;
+  margin: 0;
+  width: 120px;
+
+  transition: linear width 0.2s, linear margin 0.2s;
+
+  path {
+    opacity: 100%;
+    transition: linear opacity 0.2s;
+  }
+
+  .stuck & {
+    width: 90px;
+    margin: -15px 15px;
+
+    path {
+      opacity: 0;
+    }
+
+    .lettering,
+    .shadow path {
+      opacity: 100%;
+    }
+  }
+}
+
+.site-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 0 10px;
+  }
+
+  a {
+    color: $brand-white;
+    display: inline-block;
+    font-family: $font-headings;
+    @include relative-font-size(2);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    position: relative;
+
+    &:hover,
+    &:focus {
+      top: -1px;
+      text-shadow: 1px 2px $brand-red, 0px 0px 1px $brand-red;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.icon-instagram {
+  background: url('/assets/images/icons/instagram.svg');
+  background-size:  29px 29px;
+  display: inline-block;
+  height: 29px;
+  text-indent: -9999em;
+  width: 29px;
+}
+
+.icon-strava {
+  background: url('/assets/images/icons/strava.svg');
+  background-size:  29px 29px;
+  display: inline-block;
+  height: 29px;
+  text-indent: -9999em;
+  width: 29px;
+}
+
+.site-footer {
+  background-color: $brand-grey;
+  background-image: linear-gradient(to bottom, rgba(179, 6, 153, 0.30) 0%, transparent 100%), linear-gradient(to right, #4f07ab 0%, #006c7d 100%);
+  // background-image: linear-gradient(to bottom, rgba(179, 6, 153, 0.1) 0%, transparent 100%), linear-gradient(to bottom right, #7ba8bb, #013056 55%);
+
+  padding: 40px 0 0;
+  position: relative;
+}
+
+.site-footer--logo {
+  width: 40%;
+}
+
+.footer-links {
+  color: $brand-white;
+
+  ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+  }
+}
+
+.footer-link--title {
+  font-family: $font-headings;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.04em;
+  @include relative-font-size(1.7);
+  text-transform: uppercase;
+
+  ul + & {
+    margin-top: 2rem;
+  }
+}
+
+.footer-link {
+  color: $brand-white;
+  @include relative-font-size(1.4);
+
+  &:hover {
+    color: rgba($brand-white, 0.7);
+    text-decoration: none;
+  }
+}
+
+.copyright-statement {
+  color: rgba($brand-white, 0.6);
+  border-top: 1px solid rgba(239, 0, 255, 0.85);
+  display: block;
+  margin-top: 30px;
+  padding: 10px 0;
+}
+
+.header-socials,
+.footer-socials {
+  * + * {
+    margin-left: 10px;
+  }
+}
+
+// .nav-trigger {
+//   display: none;
+// }
+
+// .menu-icon {
+//   float: right;
+//   width: 36px;
+//   height: 26px;
+//   line-height: 0;
+//   padding-top: 10px;
+//   text-align: center;
+
+//   > svg path {
+//     fill: $border-color-03;
+//   }
+// }
+
+// label[for="nav-trigger"] {
+//   display: block;
+//   float: right;
+//   width: 36px;
+//   height: 36px;
+//   z-index: 2;
+//   cursor: pointer;
+// }
+
+// input ~ .trigger {
+//   clear: both;
+//   display: none;
+// }
+
+// input:checked ~ .trigger {
+//   display: block;
+//   padding-bottom: 5px;
+// }
+
+// @media screen and (min-width: 600px) {
+//   label[for="nav-trigger"] {
+//     display: none;
+//   }
+
+//   .menu-icon {
+//     display: none;
+//   }
+
+//   input ~ .trigger {
+//     display: block;
+//   }
+// }

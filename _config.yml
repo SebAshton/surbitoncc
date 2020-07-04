@@ -28,9 +28,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.surbiton.cc" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_username: surbiton.cc
 
+header_pages:
+ - the-club.md
+ - join-the-ride.md
+ - riding-and-racing.md
+
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

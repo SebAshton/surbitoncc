@@ -1,0 +1,183 @@
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/images/backgrounds/hero-image.jpg');
+  background-position: center;
+  background-size: cover;
+
+  &.spacer {
+    height: calc(70vh + 132px);
+    transition: linear height 0.2s, linear padding-top 0.2s;
+  }
+
+  .stuck + main &.spacer {
+    height: calc(70vh + 78px);
+  }
+}
+
+.hero--title {
+  color: $brand-white;
+  font-family: $font-display;
+  @include relative-font-size(12);
+  letter-spacing: 0.05em;
+  transform: rotate(-6deg);
+  text-align: center;
+}
+
+.hero--sub-title {
+  display: block;
+  @include relative-font-size(2);
+  letter-spacing: 0.05em;
+  font-family: $font-headings;
+  text-transform: uppercase;
+  transform: rotate(6deg) translate(-20px, -22px);
+  text-align: right;
+}
+
+.about {
+  background-image: linear-gradient(135deg, #FAD7A1 10%, #E96D71 100%);
+  padding: 50px 0;
+}
+
+.text {
+  @include relative-font-size(1.8);
+  max-width: 75ch;
+  text-shadow: 0 0 1px white;
+  line-height: 1.3;
+}
+
+.text--lead {
+  margin-bottom: 2rem;
+  @include relative-font-size(2.2);
+}
+
+.text--alt {
+  color: $brand-white;
+  text-shadow: none;
+}
+
+.about--image-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px 10px;
+  grid-template-areas: "left top-right" "left bottom-right";
+}
+
+.about--image-top-right {
+  grid-area: top-right;
+}
+
+.about--image-bottom-right {
+  grid-area: bottom-right;
+}
+
+.about--image-left {
+  grid-area: left;
+}
+
+.about--image {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  height: 100%;
+  object-fit: cover;
+  transition: linear box-shadow 0.2s;
+  vertical-align: bottom;
+  width: 100%;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  }
+}
+
+.join-us {
+  background: linear-gradient(to bottom, rgba(83, 105, 167, 0.46), rgba(255, 133, 133, 0.45)), linear-gradient(to right, rgba(143, 65, 175, 0.46), rgba(255, 133, 133, 0.45)), url('/assets/images/backgrounds/two-up.jpg') $brand-red;
+  background-size: cover;
+  padding: 4rem 15px;
+}
+
+.centered-hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.centered-hero__title {
+  color: $brand-white;
+  font-family: $font-headings;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.centered-hero__text {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &:last-of-type {
+    margin-bottom: 2rem;
+  }
+}
+
+.centered-hero__cta {
+  color: $brand-white;
+  display: inline-block;
+  font-family: $font-display;
+  @include relative-font-size(2.5);
+  letter-spacing: 0.05em;
+  transform: rotate(-6deg);
+
+  &:hover {
+    color: $brand-highlight;
+    text-decoration: none;
+  }
+}
+
+// .centered-hero__cta {
+//   background: $brand-indigo;
+//   border-radius: 3px;
+//   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+//   display: inline-block;
+//   color: $brand-white;
+//   @include relative-font-size(1.4);
+//   margin-top: 1.5em;
+//   text-decoration: none;
+//   padding: 1rem 2rem;
+
+//   &:hover {
+//     background: lighten($brand-indigo, 5);
+//     color: $brand-white;
+//     text-decoration: none;
+//     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+//   }
+// }
+
+.get-involved {
+  background: linear-gradient(to right, rgba(#001654, 0.4), rgba(#fe2796, 0.4)), linear-gradient(to bottom, rgba(#001654, 0.4), rgba(#fe2796, 0.4)), url('/assets/images/backgrounds/winding-roads.jpg') center center;
+  background-size: cover;
+
+  padding: 6rem 0 5rem;
+}
+
+// #001654 -> #fe2796
+// #00c3ce -> #fe476d
+
+.get-involved__icon {
+  color: $brand-white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.get-involved__title {
+  color: $brand-white;
+  font-family: $font-headings;
+  @include relative-font-size(2);
+  letter-spacing: 0.04em;
+  margin: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.get-involved__text {
+  color: $brand-white;
+  text-align: center;
+}
