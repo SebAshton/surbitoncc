@@ -25,5 +25,3 @@ As a young club, SCC understands that trying out something new can be daunting.
 If you have been on a ride with the team and want to get to know everyone more before committing, sign up for a 3 month trial membership. This includes access to all club and training rides.
 
 3 month trial: £10
-
-test
