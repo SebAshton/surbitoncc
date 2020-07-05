@@ -8,7 +8,8 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-size: 10px;
+  // font-size: 10px;
+  font-size: 67.5%;
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -671,7 +672,7 @@ html {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .container {
     max-width: 540px;
   }
@@ -703,7 +704,7 @@ html {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .container, .container-sm {
     max-width: 540px;
   }
@@ -1002,7 +1003,7 @@ html {
   margin-left: 91.666667%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1852,7 +1853,7 @@ html {
   display: inline-flex !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .d-sm-none {
     display: none !important;
   }
@@ -2182,7 +2183,7 @@ html {
   align-self: stretch !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .flex-sm-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -3170,7 +3171,7 @@ html {
   margin-left: auto !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .m-sm-0 {
     margin: 0 !important;
   }

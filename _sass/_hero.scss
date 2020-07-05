@@ -6,6 +6,10 @@
   &.spacer {
     height: calc(70vh + 132px);
     transition: linear height 0.2s, linear padding-top 0.2s;
+
+    @media screen and (max-width: 768px) {
+      height: calc(70vh + 78px);
+    }
   }
 
   .stuck + main &.spacer {
@@ -158,8 +162,13 @@
   padding: 6rem 0 5rem;
 }
 
-// #001654 -> #fe2796
-// #00c3ce -> #fe476d
+.get-involved__block {
+  & + & {
+    @media screen and (max-width: 768px) {
+      margin-top: 4rem;
+    }
+  }
+}
 
 .get-involved__icon {
   color: $brand-white;
