@@ -311,7 +311,7 @@ h6,
 .h5,
 .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: $base-font-bold-weight;
   line-height: 1.1;
   color: inherit;
 }
