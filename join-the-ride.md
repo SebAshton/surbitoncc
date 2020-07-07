@@ -4,6 +4,7 @@
 
 layout: page
 title: Join the ride
+permalink: /join-the-ride
 hero_image_url: /assets/images/backgrounds/crocknorth.jpg
 ---
 

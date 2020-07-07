@@ -4,6 +4,7 @@
 
 layout: page
 title: Riding and racing
+permalink: /riding-and-racing
 hero_image_url: /assets/images/backgrounds/racing.jpg
 ---
 

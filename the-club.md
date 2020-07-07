@@ -4,5 +4,6 @@
 
 layout: page
 title: The club
+permalink: /the-club
 hero_image_url: /assets/images/backgrounds/loading-up.jpg
 ---
