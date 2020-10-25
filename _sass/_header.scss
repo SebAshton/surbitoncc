@@ -101,7 +101,7 @@ main .spacer {
     list-style: none;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     li {
       padding: 0 10px;
     }
@@ -111,6 +111,10 @@ main .spacer {
 .header-socials {
   * + * {
     margin-left: 10px;
+  }
+
+  @media screen and (max-width: 820px) {
+    display: none;
   }
 }
 

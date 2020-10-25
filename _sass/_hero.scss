@@ -2,10 +2,15 @@
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/backgrounds/hero-image.jpg');
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 
   &.spacer {
     height: calc(70vh + 132px);
     transition: linear height 0.2s, linear padding-top 0.2s;
+
+    @media screen and (max-width: 900px) {
+      height: calc(70vh + 100px);
+    }
 
     @media screen and (max-width: 768px) {
       height: calc(40vh + 78px);
@@ -27,8 +32,13 @@
   font-weight: normal;
   @include relative-font-size(12);
   letter-spacing: 0.05em;
+  padding: 0 20px;
   transform: rotate(-6deg);
   text-align: center;
+
+  @media screen and (max-width: 900px) {
+    @include relative-font-size(8);
+  }
 
   @media screen and (max-width: 768px) {
     @include relative-font-size(4);
