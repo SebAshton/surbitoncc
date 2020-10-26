@@ -14,8 +14,6 @@ We encourage all prospective members to register [on the forum](https://forum.su
 
 Once you've registered you'll be able to see the rides that get posted up.
 
-![At the taproom]({{ '/assets/images/pictures/around-the-table.jpg' | relative_url }})
-
 ### Become a member
 
 You’ve been on a ride, we’re pretty OK and you want to join. You can apply through our [British Cycling page](https://www.britishcycling.org.uk/club/profile/8974/surbiton-cycle-club).
