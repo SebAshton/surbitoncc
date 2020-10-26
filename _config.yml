@@ -22,9 +22,8 @@ title: Surbiton Cycle Club
 email: surbitoncycleclub@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   SCC is here to ride as a team, race together and feast on the glory, or cinnabuns, whichever comes first.
-baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://www.surbiton.cc" # the base hostname & protocol for your site, e.g. http://example.com
-url: "//www.surbiton.cc" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://www.surbiton.cc"
 instagram_username: surbiton.cc
 
 header_pages:
