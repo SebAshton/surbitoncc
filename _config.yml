@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "https://www.surbiton.cc"
 instagram_username: surbiton.cc
+google_analytics: G-452W422X7P
 
 header_pages:
  - the-club.md
